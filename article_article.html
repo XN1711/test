@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>详情页</title>
+    <link rel="stylesheet" href="css/css.css" type="text/css"/>
+    <link rel="stylesheet" href="css/base.css" type="text/css"/>
+    <link rel="stylesheet" href="js/swiper.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+<div class="quzhua">
+    <div class="article_main">
+        <div class="f_left">
+            <p><a href="index.html" ><img src="images/article_topfh.png" alt=""></a></p>
+            <div class="jb">
+            <p class="jb_l"><img src="images/jq.png" alt=""></p>
+            <span>50</span>
+            <p class="jb_r"><img src="images/jh.png" alt=""></p>
+            </div>
+        </div>
+        <div class="f_right">
+            <p><img src="images/article_toplw.png" alt=""></p>
+            <h3><img src="images/article_toplb.png" alt=""></h3>
+            <div><a href="javascript:void(0); "><img src="images/article_topjb.png" alt=""></a><a href="javascript:void(0); "><img src="images/article_topwh.png" alt=""></a> </div>
+        </div>
+    </div>
+
+    <!-- 爪子-->
+    <div class="zhua">
+        <div class="zhua_box">
+            <div class="article_box_zt">
+                <img class="article_gun" src="images/article_gun.png" alt="">
+                <div class="article_gun_box">
+                <img class="zhua_tou" src="images/zhua_tou.png" alt="">
+                <img class="zhua_left left"  src="images/zhua_left.png" id="zhua_left" alt="">
+                <img class="zhua_right right" src="images/zhua_right.png" id="zhua_right" alt="">
+                </div>
+            </div>
+            <img class="zhua_box_bj" src="images/zhua_bj.png" alt="" />
+        </div>
+
+    </div>
+
+
+    <!-- 无缝滚动-->
+    <div id="lunbo">
+        <ul class="clearfix">
+            <li><img src="images/lunbo1.png"></li>
+            <li><img src="images/lunbo2.png"></li>
+            <li><img src="images/lunbo3.png"></li>
+            <li><img src="images/lunbo4.png"></li>
+            <li><img src="images/lunbo5.png"></li>
+            <li><img src="images/lunbo6.png"></li>
+
+            <li><img src="images/lunbo1.png"></li>
+            <li><img src="images/lunbo2.png"></li>
+            <li><img src="images/lunbo3.png"></li>
+            <li><img src="images/lunbo4.png"></li>
+            <li><img src="images/lunbo5.png"></li> 
+            <li><img src="images/lunbo6.png"></li>
+        </ul>
+    </div>
+    <p class="zhua_but"><img src="images/anniu.png" alt=""/></p>
+</div>
+
+<script src="js/js.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var ty = $(window).height();
+    $(".article_main").css('height',ty+'px');
+//    window.onload=function(){
+    var div=document.getElementById("lunbo");
+    var ul=div.getElementsByTagName("ul")[0];
+    var timer=setInterval(change,10);
+    var num=0;
+    function change(){
+        num--;
+        if(num==-100*6){ //向左移动6个图片宽度，则第7到第12图片在最后出现，显示的6个图片和原来6个图片一样
+            num=0;  //设回原来位置
+        }else{
+            ul.style.marginLeft=num+"px"; //每10时间移动一个图片
+        }
+    }
+</script>
+
+<!--详情页礼物-->
+<div class="fixed_ck">
+    <div class="fixed_kd_box" >
+        <p class="gb"><img src="images/gb.png" alt=""></p>
+        <div class="fixed_kd_ck clearfix">
+            <ul class="fixed_kd_ck_ul1">
+                <li><p>全部图鉴</p></li>
+                <li><p>房间仓库</p></li>
+                <li><p>房间记录</p></li>
+            </ul>
+            <ul class="fixed_kd_ck_ul2">
+                <li>
+                    <div class="main_ck1_box">
+                        <div class="section_box clearfix ">
+                            <a href="">
+                                <img src="images/tuj1.png" alt=""/>
+                            </a>
+                        </div>
+                   </div>
+                    <div class="main_ck1_box">
+                        <div class="section_box clearfix ">
+                            <a href="">
+                                <img src="images/tuj2.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_ck1_box">
+                        <div class="section_box clearfix ">
+                            <a href="">
+                                <img src="images/tuj3.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_ck1_box">
+                        <div class="section_box clearfix ">
+                            <a href="">
+                                <img src="images/tuj4.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_ck1_box">
+                        <div class="section_box clearfix ">
+                            <a href="">
+                                <img src="images/tuj5.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_ck1_box">
+                        <div class="section_box clearfix ">
+                            <a href="">
+                                <img src="images/tuj6.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <div class="main_ck1_box">
+                        <div class="section_box clearfix ">
+                            <a href="">
+                                <img src="images/main1.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_ck1_box">
+                        <div class="section_box clearfix ">
+                            <a href="">
+                                <img src="images/main1.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_ck1_box">
+                        <div class="section_box clearfix ">
+                            <a href="">
+                                <img src="images/main1.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_ck1_box">
+                        <div class="section_box clearfix ">
+                            <a href="">
+                                <img src="images/main1.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_ck1_box">
+                        <div class="section_box clearfix ">
+                            <a href="">
+                                <img src="images/main1.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="fixed_kd_dd clearfix" style="padding: 0">
+                        <div  class="fixed_dd_div1">
+                            <p>名称</p>
+                            <p>可爱卡通小娃娃毛绒</p>
+                        </div>
+                        <div  class="fixed_dd_div2">
+                            <p>提示时间</p>
+                            <p>2017-12-12</p>
+                        </div>
+                        <div  class="fixed_dd_div3">
+                            <p>状态</p>
+                            <p>已送到</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--详情页排名-->
+<div class="fixed_ph">
+    <div class="fixed_kd_box" >
+        <p class="gb"><img src="images/gb.png" alt=""></p>
+        <div class="fixed_kd_ph clearfix">
+            <ul>
+                <li>
+                    <div class="f_left fixed_ph_pm">
+                        <div><img src="images/tx.png" alt=""/></div>
+                        <p>1</p>
+                        <h2>玩家名称</h2>
+                        <ul>
+                            <li><img src="images/tubiao2.png" alt=""><span>*1</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                        </ul>
+                    </div>
+                    <div class="f_right">
+                        <h3>88</h3>
+                        <img src="images/aix.png" alt=""/>
+                    </div>
+                </li>
+                <li>
+                    <div class="f_left fixed_ph_pm">
+                        <div><img src="images/tx.png" alt=""/></div>
+                        <p>1</p>
+                        <h2>玩家名称</h2>
+                        <ul>
+                            <li><img src="images/tubiao2.png" alt=""><span>*1</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                        </ul>
+                    </div>
+                    <div class="f_right">
+                        <h3>88</h3>
+                        <img src="images/aix.png" alt=""/>
+                    </div>
+                </li>
+                <li>
+                    <div class="f_left fixed_ph_pm">
+                        <div><img src="images/tx.png" alt=""/></div>
+                        <p>1</p>
+                        <h2>玩家名称</h2>
+                        <ul>
+                            <li><img src="images/tubiao2.png" alt=""><span>*1</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                        </ul>
+                    </div>
+                    <div class="f_right">
+                        <h3>88</h3>
+                        <img src="images/aix.png" alt=""/>
+                    </div>
+                </li>
+                <li>
+                    <div class="f_left fixed_ph_pm">
+                        <div><img src="images/tx.png" alt=""/></div>
+                        <p>1</p>
+                        <h2>玩家名称</h2>
+                        <ul>
+                            <li><img src="images/tubiao2.png" alt=""><span>*1</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                        </ul>
+                    </div>
+                    <div class="f_right">
+                        <h3>88</h3>
+                        <img src="images/aix.png" alt=""/>
+                    </div>
+                </li>
+                <li>
+                    <div class="f_left fixed_ph_pm">
+                        <div><img src="images/tx.png" alt=""/></div>
+                        <p>1</p>
+                        <h2>玩家名称</h2>
+                        <ul>
+                            <li><img src="images/tubiao2.png" alt=""><span>*1</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                            <li><img src="images/tubiao2.png" alt=""><span>*3</span></li>
+                        </ul>
+                    </div>
+                    <div class="f_right">
+                        <h3>88</h3>
+                        <img src="images/aix.png" alt=""/>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <div class="fixed_ph_pmw clearfix">
+
+
+            <div class="f_left fixed_ph_pm">
+                <h1>我</h1>
+                <div><img src="images/tx.png" alt=""/></div>
+                <h2>玩家名称</h2>
+                <h4>我的排名：1000+</h4>
+            </div>
+            <div class="f_right">
+                <h3>88</h3>
+                <img src="images/aix.png" alt=""/>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+<!--详情页问好-->
+<div class="fixed_kd">
+    <div class="fixed_kd_box" >
+        <p class="gb"><img src="images/gb.png" alt=""></p>
+        <div class="fixed_kd_nr">
+            <h3>【免费抓娃娃攻略】</h3>
+            <p>一、连续签到获得金币奖励并有机会领取稀有碎片哦。</br>
+                二、每天分享到朋友圈或微信群可获得的1次免费抓娃娃机会，分享操作如下：</br>
+                1、点击页面右上角的“。。。”</br>
+                2、选择“发送给朋友”或“分享到朋友圈”</br>
+                三、碎片成功合成后分享到朋友圈或微信群可获得1次免费抓娃娃机会。</br>
+            </p>
+            <h3>【抓娃娃规则】</h3>
+            <p>一、每次抓娃娃需要消耗次数，娃娃机上左上角会显示剩余次数。</br>
+                二、夹中的碎片会一直存放于图集内，进行保留。</br>
+                三、一经发现有作弊行为，将不予兑换奖品。我们将在七个工作日内发货，如需查询快递状态，请发送姓名、手机号至客服。
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

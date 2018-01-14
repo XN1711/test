@@ -1,0 +1,79 @@
+/*重置css*/
+*, :before,:after{
+    margin: 0;
+    padding: 0;
+    /*清除移动高亮*/
+    -webkit-tap-highlight-color: transparent;
+    /*边框开始计算*/
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;/*兼容*/
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei", "微软雅黑", "SimSun", "宋体",san-serif;
+    color: #333;
+    background-color: #ffeef5;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    border: none;
+}
+input{
+    border: none;
+    outline: none;
+    /*清除移动默认表单样式*/
+    -webkit-appearance: none;
+}
+ul,li,ol{
+    list-style: none;
+}
+/*公用*/
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+/*头部*/
+.header_top{
+    width: 100%;
+    height: 80px;
+}
+
+/*w尾部*/
+.footer{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}
+.footer>.footer_box{
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fd89ba;
+}
+.footer>.footer_box>ul{width: 100%}
+.footer>.footer_box>ul>li{float: left;width: 33%;padding: 5px 0;}
+.footer>.footer_box>ul>li>a>img{width: 100%}
+.footer>.footer_box>ul>li>p{text-align: center;font-size: 16px;color: white;letter-spacing: 2px}
+.footer>.footer_box>ul>li>a{display: block;width: 50px;margin: 0 auto}
